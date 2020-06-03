@@ -20,8 +20,6 @@ const Header = () => {
     const { data, loading, error } = useQuery(OBTENER_USUARIO);
 
     // console.log(data);
-    // console.log(loading);
-    // console.log(error);
 
     // Proteger que no accedamos a data antes de tener resustados
     if(loading) return 'Cargando...';
