@@ -3,8 +3,9 @@ import fetch from 'node-fetch';
 import { setContext } from 'apollo-link-context';
 
 // Para decirle el servidor al que se va a conectar
+// uri: 'http://localhost:4000/', Este era el antiguo de apollo, ahora hemos puesto el nuevo de heroku
 const httpLink = createHttpLink({
-    uri: 'http://localhost:4000/',
+    uri: 'https://hidden-ravine-19496.herokuapp.com/',
     fetch
 });
 
